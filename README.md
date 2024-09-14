@@ -1,8 +1,14 @@
-# React + Vite
+CryptoBar - Cryptocurrency Tracker
+A modern cryptocurrency tracker built with React JS, Tailwind CSS, and Chart.js. Track real-time crypto prices, view historical data through interactive charts, and search for your favorite cryptocurrencies.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+📈 Real-time cryptocurrency prices
+📊 Interactive historical charts
+🔍 Search functionality for cryptocurrencies
+💻 Responsive design using Tailwind CSS
+🚀 Fast development with Vite and HMR (Hot Module Replacement)
+Setup with React and Vite
+This project uses React + Vite for fast and efficient development with HMR (Hot Module Replacement). Vite provides an optimized build setup with a minimal configuration and includes the following:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Vite for fast bundling and development server
+@vitejs/plugin-react for Fast Refresh using Babel
