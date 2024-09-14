@@ -8,7 +8,6 @@ export default function ProtectedRoutes({ children }) {
 
   useEffect(() => {
     // If the user is logged in, redirect to the homepage
-    console.log(user);
     if (user) {
       navigate("/");
     }

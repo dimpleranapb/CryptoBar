@@ -145,7 +145,7 @@ export default function Login() {
                         href="#"
                         className="text-sm font-medium text-white text-primary-600 hover:underline dark:text-primary-500"
                       >
-                        Forgot password?
+                        {/* Forgot password? */}
                       </a>
                     </div>
                     <button
@@ -154,31 +154,31 @@ export default function Login() {
                     >
                       Sign in
                     </button>
-                    <div className="flex flex-col gap-1 items-center">
-                      <span className="text-white">OR</span>
-                      <button
-                        className="flex items-center justify-center bg-blue-600 border border-gray-300 text-white hover:bg-blue-800 w-full p-2 rounded-lg"
-                        onClick={signInWithGoogle}
-                      >
-                        <img
-                          className="w-5 h-5 mr-2 bg-white"
-                          src="/google.png"
-                          alt="Google Logo"
-                        />
-                        Sign in with Google
-                      </button>
-                    </div>
-                    <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                      Don’t have an account yet?{" "}
-                      <Link
-                        onClick={() => setShowLoginForm(false)}
-                        className="font-medium text-primary-600 hover:underline dark:text-primary-500"
-                      >
-                        Sign up
-                      </Link>
-                    </p>
                   </Form>
                 </Formik>
+                <div className="flex flex-col gap-1 items-center">
+                  <span className="text-white">OR</span>
+                  <button
+                    className="flex items-center justify-center bg-blue-600 border border-gray-300 text-white hover:bg-blue-800 w-full p-2 rounded-lg"
+                    onClick={signInWithGoogle}
+                  >
+                    <img
+                      className="w-5 h-5 mr-2 bg-white"
+                      src="/google.png"
+                      alt="Google Logo"
+                    />
+                    Sign in with Google
+                  </button>
+                </div>
+                <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                  Don’t have an account yet?{" "}
+                  <Link
+                    onClick={() => setShowLoginForm(false)}
+                    className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                  >
+                    Sign up
+                  </Link>
+                </p>
               </div>
             </div>
           </div>
