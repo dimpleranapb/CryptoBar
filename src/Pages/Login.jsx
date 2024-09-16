@@ -18,8 +18,8 @@ export default function Login() {
 
   // Form initial values
   const initialValues = {
-    email: "",
-    password: "",
+    email: "demo@gmail.com",
+    password: "demo123",
   };
 
   // Form validation schema

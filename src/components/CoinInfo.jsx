@@ -98,7 +98,7 @@ export default function CoinInfo({ coin }) {
               :  formatToMillions(coin.market_data.market_cap.usd)}
           </span>
         </div>
-        {isInWishlist() ? (
+        {isInWishlist() && user? (
           <button
             className="w-full bg-red-600 text-white rounded-md p-1 hover:bg-red-900"
             onClick={() => deleteCoin(coin.name)}
