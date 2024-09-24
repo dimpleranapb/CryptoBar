@@ -30,9 +30,11 @@ export default function CoinPage() {
   }, []);
 
   if (loading) {
-    <div className="p-5 flex flex-col lg:flex-row bg-custom-dark items-center justify-center">
-      return <SyncLoader />;
-    </div>;
+    return (
+      <div className="p-5 flex flex-col lg:flex-row bg-custom-dark items-center justify-center">
+        <SyncLoader />
+      </div>
+    );
   }
 
   if (error) {
