@@ -29,10 +29,10 @@ export default function CoinPage() {
     fetchCoin();
   }, []);
 
-  if (loading) {
+  if (!coin) {
     return (
-      <div className="p-5 flex flex-col lg:flex-row bg-custom-dark items-center justify-center">
-        <SyncLoader />
+      <div className="p-5 flex flex-col lg:flex-row bg-custom-dark items-center justify-center h-screen w-full">
+        <SyncLoader color="#1E90FF" />
       </div>
     );
   }
