@@ -37,10 +37,9 @@ export default function SignUp({ setShowLoginForm }) {
         password
       );
       console.log("User created:", userCredential.user);
-    //   setShowLoginForm(true);
-      console.log("call notify")
+      setShowLoginForm(true);
+      console.log("call notify");
       signUpNotify();
-
     } catch (error) {
       console.error("Error creating user:", error.message);
       signUpError(error.message);
@@ -112,7 +111,7 @@ export default function SignUp({ setShowLoginForm }) {
                   <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                     Already have an account?{" "}
                     <Link
-                      to="/login"
+                      onClick={() => setShowLoginForm(true)}
                       className="font-medium text-primary-600 hover:underline dark:text-primary-500"
                     >
                       Log in
