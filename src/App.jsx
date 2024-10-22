@@ -10,6 +10,9 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import NotFoundPage from "./Pages/NotFoundPage";
 import ProtectedRoutes from "./ProtectedRoutes";
+import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import Terms from "./Pages/Terms";
+import AboutUs from "./Pages/AboutUs";
 
 export default function App() {
 
@@ -35,6 +38,11 @@ export default function App() {
           ),
         },
         { path: "*", element: <NotFoundPage /> },
+        { path: "/privacy-policy", element: <PrivacyPolicy />},
+        { path: "/terms", element: <Terms />},
+        { path: "/about-us", element: <AboutUs />}
+
+
       ],
     },
   ]);

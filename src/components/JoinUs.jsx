@@ -11,7 +11,7 @@ export default function JoinUs() {
         DISCORD
       </span>
       <p className="p-5 text-white">Invest and manage all your crypto at one place.</p>
-      <Link className="p-3 px-8 bg-custom-dark-btn rounded-full text-white hover:opacity-90">JOIN NOW</Link>
+      <Link className="p-3 px-8 bg-custom-dark-btn rounded-full text-white hover:opacity-90" >JOIN NOW</Link>
     </div>
   );
 }

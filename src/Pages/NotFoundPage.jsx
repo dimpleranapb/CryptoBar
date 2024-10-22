@@ -5,17 +5,6 @@ export default function NotFoundPage() {
   const [counter, setCounter] = useState(5);
   const navigate = useNavigate();
 
-  //   useEffect(() => {
-  //     const interval = setInterval(() => {
-  //       setCounter((prevCounter) => prevCounter - 1); // Decrement counter every second
-  //       console.log(counter);
-  //       if (counter === 1) {
-  //         navigate("/");
-  //       }
-  //     }, 1000);
-  //     return clearInterval(interval);
-  //   }, []);
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCounter((prevCounter) => {
@@ -31,7 +20,7 @@ export default function NotFoundPage() {
   }, [navigate]);
 
   return (
-    <main class="grid min-h-full place-items-center bg-[#14161A] px-6 py-24 sm:py-32 lg:px-8">
+    <main class="grid h-full w-full place-items-center bg-transparent px-6 py-24 sm:py-32 lg:px-8">
       <div class="text-center">
         <p class="text-base font-semibold text-blue-600">404</p>
         <h1 class="mt-4 text-3xl font-bold tracking-tight text-white sm:text-5xl">

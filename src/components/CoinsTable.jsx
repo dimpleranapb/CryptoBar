@@ -7,7 +7,7 @@ import { formatToMillions } from "../utils/formatter";
 
 export default function CoinsTable() {
   const { coins, symbol, filteredList } = useCrypto();
-  const navigate = useNavigate(); // To navigate programmatically
+  const navigate = useNavigate();
 
   // Pagination
   const [currentPage, setCurrentPage] = useState(1);
@@ -21,6 +21,8 @@ export default function CoinsTable() {
 
   const handleRowClick = (coinId) => {
     navigate(`/coin/${coinId}`);
+    window.scrollTo(0, 0); // Scroll to the top of the page
+
   };
 
   return (
