@@ -12,10 +12,10 @@ export default function Watchlist() {
             return (
               <div className="w-full bg-[#002f6c] text-white flex justify-between p-2 rounded-md" key={i}>
                 <span>{coin.name}</span>
-                <span>
+                <span className="flex justify-center align-middle">
                   {symbol} &nbsp;{coin.price[currency]} &nbsp;
                   <button onClick={()=>deleteCoin(coin.name)}>
-                    <i className="fa fa-trash-o"></i>
+                    <img className="h-4" src="/delete.svg" />
                   </button>
                 </span>
               </div>

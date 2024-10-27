@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="flex flex-row items-center justify-between py-3 px-2 bg-transparent max-w-full text-blue-600 lg:px-40">
+      <header className=" flex flex-row items-center justify-between py-3 px-2 bg-transparent max-w-full text-blue-600 lg:px-40">
         <Link className="text-blue-600 text-xl" to="/">
           <img src="/logo.png" alt="Logo" />
         </Link>
