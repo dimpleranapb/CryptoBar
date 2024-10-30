@@ -14,29 +14,29 @@ export default function Footer() {
       style={{ backgroundImage: "url('/footerbg.png')" }}
     >
       <div className="flex gap-4">
-        <i className="fa-brands fa-facebook text-4xl bg-custom-icon bg-clip-text text-transparent hover:bg-custom-inner-text"></i>
-        <i className="fa-brands fa-discord text-4xl bg-custom-icon bg-clip-text text-transparent hover:bg-custom-inner-text"></i>
-        <i className="fa-brands fa-twitter text-4xl bg-custom-icon bg-clip-text text-transparent hover:bg-custom-inner-text"></i>
-        <i className="fa-brands fa-instagram text-4xl bg-custom-icon bg-clip-text text-transparent hover:bg-custom-inner-text"></i>
+        <i className="fa-brands fa-facebook text-4xl bg-custom-icon bg-clip-text text-transparent hover:bg-custom-inner-text hover:scale-110"></i>
+        <i className="fa-brands fa-discord text-4xl bg-custom-icon bg-clip-text text-transparent hover:bg-custom-inner-text hover:scale-110"></i>
+        <i className="fa-brands fa-twitter text-4xl bg-custom-icon bg-clip-text text-transparent hover:bg-custom-inner-text hover:scale-110"></i>
+        <i className="fa-brands fa-instagram text-4xl bg-custom-icon bg-clip-text text-transparent hover:bg-custom-inner-text hover:scale-110"></i>
       </div>
       <div className="text-white flex p-8 gap-8">
         <Link
           to="privacy-policy"
-          className="hover:text-blue-200"
+          className="hover:text-blue-200 hover:scale-110"
           onClick={handlePrivacyClick}
         >
           Privacy Policy
         </Link>
         <Link
           to="terms"
-          className="hover:text-blue-200"
+          className="hover:text-blue-200 hover:scale-110"
           onClick={handlePrivacyClick}
         >
           Terms And Conditions
         </Link>
         <Link
           to="about-us"
-          className="hover:text-blue-200"
+          className="hover:text-blue-200 hover:scale-110"
           onClick={handlePrivacyClick}
         >
           About Us

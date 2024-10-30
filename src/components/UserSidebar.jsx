@@ -40,7 +40,7 @@ export default function Drawer() {
         >
           {user ? (
             <img
-              className="h-full rounded-full border-2 border-gray-600"
+              className="h-full rounded-full border-2 border-gray-600 hover:scale-110"
               src={user.photoURL ? user.photoURL : "/user.png"}
             />
           ) : (

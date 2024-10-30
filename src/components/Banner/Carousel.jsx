@@ -41,7 +41,7 @@ export default function Carousel() {
       to={`/coin/${coin.id}`}
       className="text-white flex flex-col items-center justify-center"
     >
-      <img className="mb-2 h-20" src={coin.image} alt={coin.name} />
+      <img className="mb-2 h-20 hover:scale-105" src={coin.image} alt={coin.name} />
       <span>
         {coin.symbol}&nbsp;
         {coin.price_change_percentage_24h >= 0 ? (

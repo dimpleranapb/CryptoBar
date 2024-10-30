@@ -15,7 +15,6 @@ import { HistoricalChart } from "../config/api";
 import { chartDays } from "../config/data";
 import { useCrypto } from "../CryptoContext";
 import { SyncLoader } from "react-spinners";
-import "tailwindcss/tailwind.css"; // Ensure Tailwind CSS is imported
 
 // Registering the Chart.js components
 ChartJS.register(
