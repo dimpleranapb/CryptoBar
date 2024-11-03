@@ -22,11 +22,11 @@ export default function CoinsTable() {
   const handleRowClick = (coinId) => {
     navigate(`/coin/${coinId}`);
     window.scrollTo(0, 0); // Scroll to the top of the page
-
   };
 
   return (
     <div className="bg-transparent p-7 flex items-center justify-center flex-col w-full">
+      <h2 className="text-white text-xl md:text-4xl font-bold mt-[-20px] mb-4">MARKET UPDATES</h2>
       {/* Scrollable container for the table */}
       <div className="w-full overflow-x-auto">
         <table className="text-white w-full min-w-full border-collapse">

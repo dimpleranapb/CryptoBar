@@ -1,0 +1,20 @@
+/* global.css */
+::-webkit-scrollbar {
+    width: 13px; /* Adjust scrollbar width */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, #000428 0%, #002f6c 90%); 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #5407E0;
+    border-radius: 10px;
+    border: 2px solid #001b3b; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #00509e; 
+  }
+  

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useCrypto } from "../CryptoContext";
 
 export default function SearchBar() {
-  const {coins,setFilteredList} = useCrypto()
+  const {coins,setFilteredList} = useCrypto();
 
   const searchHandler = (e) => {
     let searchResult = coins.filter((coin) =>
